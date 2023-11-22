@@ -1,11 +1,16 @@
+/* Styly pro stránku */
+
+/* Import fontu 'Source Code Pro' z Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
 
+/* Definice barevných proměnných */
 :root {
     --white: #ffffff;
     --black: #000000;
     --gray: #A0A0A0;
 }
 
+/* Styly pro celý dokument */
 body {
     margin: 0;
     font-family: 'Source Code Pro', monospace;
@@ -13,20 +18,24 @@ body {
     font-size: 16px;
 }
 
+/* Styly pro hlavní obsah stránky */
 main {
     min-height: 100vh;
     margin-bottom: -70px;
 }
 
+/* Prvek pro správné zarovnání obsahu */
 .push {
     height: 70px;
 }
 
+/* Styly pro hlavní kontejner stránky */
 .my-container {
     display: flex;
     flex-direction: column;
 }
 
+/* Styly pro hlavičku stránky */
 .header {
     display: flex;
     justify-content: space-between;
@@ -37,17 +46,18 @@ main {
     margin-bottom: 60px;
 }
 
+/* Styly pro tučný text */
 .bold {
     font-weight: bold;
 }
 
-
+/* Styly pro logo v hlavičce */
 .logo img {
-    /* Styly pro logo */
     width: 100%;
     max-width: 120px;
 }
 
+/* Styly pro navigační menu */
 nav ul {
     list-style: none;
     display: flex;
@@ -60,10 +70,12 @@ nav a {
     text-decoration: underline;
 }
 
+/* Styly pro obsah stránky */
 .content {
     display: block;
 }
 
+/* Styly pro levý sloupec */
 .left-column {
     background-color: #000;
     color: #fff;
@@ -72,6 +84,7 @@ nav a {
     margin-bottom: 40px;
 }
 
+/* Styly pro střední sloupec */
 .middle-column {
     display: block;
 }
@@ -81,6 +94,7 @@ nav a {
     height: auto;
 }
 
+/* Styly pro pravý sloupec */
 .right-column {
     background-color: #fff;
     padding-left: 20px;
@@ -96,6 +110,7 @@ nav a {
     padding-bottom: 40px;
 }
 
+/* Styly pro dropdown menu */
 .dropdown {
     position: absolute;
     display: inline-block;
@@ -108,7 +123,6 @@ nav a {
     width: 100%;
     height: 100%;
     background-color: #000;
-    /* Barva pozadí menu */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,6 +132,7 @@ nav a {
     display: none;
 }
 
+/* Styly pro viditelné dropdown menu */
 .dropdown-content.show {
     display: flex;
 }
@@ -127,27 +142,26 @@ nav a {
     align-self: self-end;
     text-decoration: underline;
     padding-top: 60px;
-    /* Add any additional styling for the close button */
 }
 
 .dropdown-content a {
     color: #fff;
-    /* Barva textu odkazů */
     padding: 20px;
     text-decoration: none;
     display: block;
     font-size: 18px;
-    /* Velikost písma */
 }
 
 .dropdown-content a:hover {
     background-color: #A0A0A0;
 }
 
+/* Styly pro navigační menu v hlavičce na větších obrazovkách */
 .right-column-header nav {
     justify-content: flex-end;
 }
 
+/* Styly pro kontaktní informace */
 #mb-contact {
     padding-top: 60px;
 }
@@ -162,6 +176,7 @@ nav a {
     text-decoration: underline;
 }
 
+/* Styly pro patičku stránky */
 footer {
     height: 70px;
     width: 100%;
@@ -169,12 +184,13 @@ footer {
     padding: 20px;
 }
 
+/* Styly pro logo v patičce */
 .logo-footer img {
-    /* Styly pro logo */
     width: 100%;
     max-width: 80px;
 }
 
+/* Media queries pro responsivitu stránky na různých obrazovkách */
 
 @media only screen and (min-width: 768px) {
     body {
@@ -233,7 +249,6 @@ footer {
         width: 100%;
     }
 
-
     .right-column {
         width: 33%;
         padding: 0;
@@ -254,13 +269,10 @@ footer {
         position: fixed;
         top: 0;
         right: 0;
-        /* Position on the right side */
         width: 40%;
-        /* Set the width as needed */
         height: 70%;
         background-color: #000;
         color: #fff;
-        /* Set text color to white */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -279,17 +291,14 @@ footer {
         align-self: self-end;
         text-decoration: underline;
         padding-top: 40px;
-        /* Add any additional styling for the close button */
     }
 
     .dropdown-content a {
         color: #fff;
-        /* Barva textu odkazů */
         padding: 20px;
         text-decoration: none;
         display: block;
         font-size: 18px;
-        /* Velikost písma */
     }
 
     .dropdown-content a:hover {
@@ -300,9 +309,6 @@ footer {
         justify-content: flex-end;
     }
 }
-
-
-
 
 @media only screen and (min-width: 860px) {
     body {
@@ -320,7 +326,6 @@ footer {
     .left-column {
         margin-right: 20px;
         margin-top: 20px;
-
     }
 
     .middle-column {
@@ -337,7 +342,6 @@ footer {
 }
 
 @media only screen and (min-width: 980px) {
-
     .header {
         margin-top: 50px;
         margin-bottom: 70px;
@@ -353,12 +357,10 @@ footer {
         margin-left: 0;
         margin-right: 20px;
         margin-top: 20px;
-
     }
 }
 
 @media only screen and (min-width: 1050px) {
-
     .content {
         margin-bottom: 20px;
     }
@@ -370,7 +372,6 @@ footer {
         margin-right: 20px;
         margin-top: 20px;
         margin-bottom: 30px;
-
     }
 
     .right-column {
