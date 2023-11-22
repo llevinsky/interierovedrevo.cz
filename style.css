@@ -110,6 +110,10 @@ nav a {
     padding-bottom: 40px;
 }
 
+.mb-hide {
+    display: none;
+}
+
 /* Styly pro dropdown menu */
 .dropdown {
     position: absolute;
@@ -204,6 +208,11 @@ footer {
         background: linear-gradient(to right, #000 0%, #000 50%, #fff 50%, #fff 100%);
     }
 
+    /* Prvek pro správné zarovnání obsahu */
+    .push {
+        height: 70px;
+    }
+
     .header {
         margin-top: 30px;
         margin-bottom: 50px;
@@ -231,16 +240,39 @@ footer {
         margin: 0 30px;
     }
 
+    .content-dt {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0 30px;
+    }
+
     .left-column {
         width: 33%;
-        align-self: flex-end;
+        align-self: center;
         margin-left: 0;
         margin-top: 10px;
         margin-right: 10px;
-        margin-bottom: 40px;
+    }
+
+    .left-column-dt {
+        width: 33%;
+        padding: 0;
+        align-self: center;
+        justify-content: flex-start;
+    }
+
+    #mb-contact {
+        padding-top: 0px;
     }
 
     .middle-column {
+        width: 33%;
+        margin: 0 15px;
+    }
+
+    .middle-column-dt {
         width: 33%;
         margin: 0 15px;
     }
@@ -253,11 +285,24 @@ footer {
         width: 33%;
         padding: 0;
         margin-left: 10px;
-        margin-bottom: 40px;
+    }
+
+    .right-column-dt {
+        width: 33%;
+        padding: 0;
+        align-self: center;
     }
 
     .right-column img {
         width: 100%;
+    }
+
+    .dt-hide {
+        display: none;
+    }
+
+    .dt-show {
+        display: flex;
     }
 
     .dropdown {
@@ -319,13 +364,19 @@ footer {
         margin: 50px;
     }
 
-    .content {
+    .content,
+    .content-dt {
         margin: 0 50px;
     }
 
     .left-column {
         margin-right: 20px;
         margin-top: 20px;
+    }
+
+    .left-column-dt {
+        margin-right: 20px;
+        margin-top: 0;
     }
 
     .middle-column {
@@ -336,8 +387,12 @@ footer {
         margin-left: 20px;
     }
 
+    .right-column-dt {
+        margin-left: 10px;
+    }
+
     #mb-contact {
-        padding-top: 120px;
+        padding-top: 0px;
     }
 }
 
@@ -347,7 +402,8 @@ footer {
         margin-bottom: 70px;
     }
 
-    .content {
+    .content,
+    .content-dt {
         margin-left: 50px;
         margin-right: 50px;
         margin-bottom: 0px;
@@ -358,28 +414,41 @@ footer {
         margin-right: 20px;
         margin-top: 20px;
     }
+
+    .left-column-dt {
+        margin-left: 0;
+        margin-right: 20px;
+        margin-top: 0px;
+    }
 }
 
 @media only screen and (min-width: 1050px) {
     .content {
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
 
     .left-column {
         width: 33%;
-        align-self: flex-end;
         margin-left: 0;
         margin-right: 20px;
         margin-top: 20px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+    }
+
+    .left-column-dt {
+        width: 33%;
+        margin-left: 0;
+        margin-right: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 
     .right-column {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
-    #mb-contact {
-        padding-top: 160px;
+    .right-column-dt {
+        margin-bottom: 0px;
     }
 
     .dropdown {
